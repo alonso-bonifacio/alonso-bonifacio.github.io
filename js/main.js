@@ -93,17 +93,17 @@
     });
 
     //Blog post Modal
-    $('.open-post').on('click', function() {
-        var postUrl = $(this).attr("href");
-        $('.inline-menu-container').removeClass('showx');
-        $('.sidebar-menu').addClass('hidex');
-        $('.content-blocks.pop').addClass('showx');
-        $('.content-blocks.pop section').load(postUrl+' .load-data');
-        return false;
-    });
+    // $('.open-post').on('click', function() {
+    //     var postUrl = $(this).attr("href");
+    //     $('.inline-menu-container').removeClass('showx');
+    //     $('.sidebar-menu').addClass('hidex');
+    //     $('.content-blocks.pop').addClass('showx');
+    //     $('.content-blocks.pop section').load(`${postUrl} .load-data`);
+    //     return false;
+    // });
 
     //On Click Open Menu Items
-    $('.menu-block, .menu-item').on('click', function() {
+    $('.menu-block, .about.menu-item, .portfolio.menu-item, .contact.menu-item').on('click', function() {
         $('.name-block').addClass('reverse');
         $('.name-block-container').addClass('reverse');
         $('.menu-blocks').addClass('hidex');
@@ -126,10 +126,10 @@
     });
     //On Click Open Blog Block
     $('.blog-block, .menu-item.blog').on('click', function() {
-        $('.content-blocks').removeClass('showx');
-        $('.content-blocks.blog').addClass('showx');
-        $('.menu-item').removeClass('active');
-        $('.menu-item.blog').addClass('active');
+        // $('.content-blocks').removeClass('showx');
+        // $('.content-blocks.blog').addClass('showx');
+        // $('.menu-item').removeClass('active');
+        // $('.menu-item.blog').addClass('active');
     });
     //On Click Open Contact Block
     $('.contact-block, .menu-item.contact').on('click', function() {
@@ -217,6 +217,7 @@
 
             $('.cursor').css('transform', 'scale(1)');
         });
+        
     }
 
 })(jQuery);
